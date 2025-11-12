@@ -12,37 +12,45 @@ Analyzing Steam games dataset to discover insights about the gaming industry, pr
 2. **Data Preprocessing** 🔄 - Clean and prepare data (In Progress)
 3. **Exploratory Data Analysis (EDA)** ⏳ - Visualize and understand patterns
 4. **Feature Engineering** ⏳ - Create meaningful features
-5. **Power BI Dashboard** ⏳ - Interactive visualizations
+5. **Power BI/Tableau Dashboard** ⏳ - Interactive visualizations
 6. **SQL Analysis** ⏳ - Business queries and insights
 7. **Machine Learning** ⏳ - Predictive models (Optional)
 
 ## 📊 Dataset
 
-- **Source:** Steam Games Dataset
+- **Source:** [Steam Games Dataset on Hugging Face](https://huggingface.co/datasets/FronkonGames/steam-games-dataset/tree/main)
 - **Format:** CSV/JSON
-- **Size:** 50MB+
+- **Size:** ~300MB
 - **Contains:** Game names, prices, ratings, genres, release dates, reviews, and more
+
+**Note:** Due to GitHub's file size limitations (100MB max), the raw dataset is not included in this repository.
+- **Download:** [Click here to download from Hugging Face](https://huggingface.co/datasets/FronkonGames/steam-games-dataset/tree/main)
+- After downloading, place the files in your local project directory to run the analysis
 
 ## 🛠️ Tools & Technologies
 
 - **Python** - Data cleaning and preprocessing
 - **Pandas** - Data manipulation
-- **Power BI** - Interactive dashboards and visualizations
+- **Jupyter Notebooks** - Interactive analysis and documentation
+- **Tableau / Power BI** - Interactive dashboards and visualizations
 - **SQL** - Data querying and analysis
-- **Matplotlib/Seaborn** - Basic visualizations
+- **Matplotlib/Seaborn** - Statistical visualizations
 
 ## 📁 Project Structure
 
 ```
 steam-games-analytics/
-├── raw_data/              # Original dataset files
-├── data/                  # Cleaned and processed data
-├── notebooks/             # Jupyter notebooks for analysis
-├── powerbi/               # Power BI dashboard files
-├── sql/                   # SQL queries
-├── reports/               # Analysis reports and insights
-└── README.md              # Project documentation
+├── notebooks/                    # Jupyter notebooks for all analysis
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_analysis.ipynb
+│   └── 03_sql_queries.ipynb
+├── tableau_powerbi/              # Dashboard files (.twbx / .pbix)
+├── reports/                      # Analysis reports, insights, and visualizations
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
 ```
+
+**Note:** Raw data files (300MB+) are not included due to GitHub size limits. Download from the [Hugging Face link](https://huggingface.co/datasets/FronkonGames/steam-games-dataset/tree/main) above.
 
 ## 🔍 Key Questions to Answer
 
@@ -80,7 +88,7 @@ steam-games-analytics/
 - [ ] Correlation analysis
 
 ### Phase 4: Advanced Analysis ⏳
-- [ ] Power BI dashboards
+- [ ] Tableau/Power BI dashboards
 - [ ] SQL queries
 - [ ] Feature engineering
 - [ ] ML models (optional)
